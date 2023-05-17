@@ -1,7 +1,9 @@
 package main
 
-import "netgo/pkg"
+import "netgo/pkg/network"
 
 func main() {
-	pkg.NewUDPServer(8888)
+	// pkg.NewUDPServer(8888)
+
+	network.NewHttpWebsocketServer(23333, "/messages")
 }
